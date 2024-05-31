@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(opl, Some(dc892131-fa07-4ae0-a0da-42089018e5a3), Some(CommandSource(console0)))[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid command: opl (similar: apply, loadp, plugin)[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid project ID: opl[0m
+[0m[[0m[31merror[0m] [0m[0mExpected ':'[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid key: opl (similar: compile, ps, compilers)[0m
+[0m[[0m[31merror[0m] [0m[0mopl[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

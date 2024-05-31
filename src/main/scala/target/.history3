@@ -1,0 +1,6 @@
+1716482379572:compile
+1716482423344:set ThisBuild / scalaVersion := "3.4.1"
+1716482432339:compile
+1716482451313:session save
+1716482455825:compile
+1716482462806:exit

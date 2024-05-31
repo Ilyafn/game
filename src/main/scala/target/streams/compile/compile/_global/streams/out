@@ -1,0 +1,71 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:6:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m  [33mval[0m [36mpickaxe[0m: [35mItem[0m = Item([31m"tool"[0m, [31m"iron pickaxe"[0m, [31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m               ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m               Not found: type Item[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:6:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m  [33mval[0m [36mpickaxe[0m: [35mItem[0m = Item([31m"tool"[0m, [31m"iron pickaxe"[0m, [31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                      ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                      Not found: Item[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:7:14 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m  [33mval[0m [36marmor1[0m: [35mItem[0m = Item([31m"armor"[0m, [31m"iron armor"[0m, [31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m              ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m              Not found: type Item[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:7:21 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m  [33mval[0m [36marmor1[0m: [35mItem[0m = Item([31m"armor"[0m, [31m"iron armor"[0m, [31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                     ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                     Not found: Item[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:8:12 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m  [33mval[0m [36macc1[0m: [35mItem[0m = Item([31m"acc"[0m, [31m"baloon"[0m, [31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m            ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m            Not found: type Item[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:8:19 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m  [33mval[0m [36macc1[0m: [35mItem[0m = Item([31m"acc"[0m, [31m"baloon"[0m, [31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                   ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                   Not found: Item[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:9:13 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m9 |[0m  [33mval[0m [36mearth[0m: [35mItem[0m = Item([31m"material"[0m, [31m"dirt"[0m, Int.MaxValue)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m             ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m             Not found: type Item[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:9:20 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m9 |[0m  [33mval[0m [36mearth[0m: [35mItem[0m = Item([31m"material"[0m, [31m"dirt"[0m, Int.MaxValue)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                    ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                    Not found: Item[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:10:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m  [33mval[0m [36me1[0m: [35mOption[0m[[35mEquipment[0m] = Option(Equipment(armor1, acc1))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: type Equipment[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:10:37 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m  [33mval[0m [36me1[0m: [35mOption[0m[[35mEquipment[0m] = Option(Equipment(armor1, acc1))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                     ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                     Not found: Equipment[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/ilya/programming/tasks/class/game/src/main/scala/Game.scala:16:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m    Array(earth, acc1, armor1, pickaxe),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mtoo many arguments for [33mmethod[0m [35mapply[0m in [33mobject[0m [35mPlayer[0m: (hp: Int, mana: Int, name: String): Player[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /home/ilya/programming/tasks/class/game/src/main/scala/World.scala:15:61 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m    [33mif[0m ran == [31m0[0m [33mthen[0m Option(Player([31m200[0m, [31m100[0m, [31m"Enemy"[0m, Array(), None))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                             ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                          No ClassTag available for T[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                          where:    T is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m12 errors found[0m
