@@ -15,7 +15,7 @@ import scala.io.StdIn._
 import scala.util.boundary
 case class World(size: Int = 20) {
   var turn: Int = 0
-  def run(player: Entity): Unit = boundary {
+  def run(player: Creature): Unit = boundary {
     while player.isAlive do {
       if turn % (size / 2) == 0 then populate()
       var dir: String = readLine
@@ -29,8 +29,8 @@ case class World(size: Int = 20) {
       turn = turn + 1
     }
   }
-  var worldMap: Array[Option[Entity]] = Array()
-  def optEnemy(): Option[Entity] = {
+  var worldMap: Array[Option[Creature]] = Array()
+  def optEnemy(): Option[Creature] = {
     val ran: Int = scala.util.Random.nextInt(5)
     if ran == 0 then Option(Enemy(200, "Enemy"))
     else None
@@ -50,7 +50,7 @@ case class World(size: Int = 20) {
   def init(): Unit = {
     worldMap = Array.fill(size)(None)
   }
-  private def toStringHelper(optP: Option[Entity]): String = {
+  private def toStringHelper(optP: Option[Creature]): String = {
     optP match {
       case None                 => "_"
       case Some(player: Player) => "P"
