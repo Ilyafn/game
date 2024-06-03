@@ -3881,3 +3881,1681 @@ Jun 01, 2024 8:08:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 6074
 Jun 01, 2024 8:08:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 6100
+Jun 01, 2024 8:09:30 PM scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+WARNING: Error indexing /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala
+java.nio.file.NoSuchFileException: /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:410)
+	at scala.meta.internal.mtags.Mtags.index(Mtags.scala:96)
+	at scala.meta.internal.mtags.Mtags.allSymbols(Mtags.scala:21)
+	at scala.meta.internal.mtags.SymbolIndexBucket.allSymbols(SymbolIndexBucket.scala:279)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:290)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:205)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:205)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:210)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:205)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:178)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:159)
+	at scala.collection.immutable.List.flatMap(List.scala:294)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:159)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:129)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:49)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:51)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:44)
+	at dotty.tools.pc.utils.MtagsEnrichments$.symbolDocumentation(MtagsEnrichments.scala:283)
+	at dotty.tools.pc.HoverProvider$.$anonfun$3(HoverProvider.scala:129)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at dotty.tools.pc.HoverProvider$.hover(HoverProvider.scala:129)
+	at dotty.tools.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:345)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:157)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:143)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:246)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Jun 01, 2024 8:09:30 PM scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+WARNING: Error indexing /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala
+java.nio.file.NoSuchFileException: /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:410)
+	at scala.meta.internal.mtags.Mtags.index(Mtags.scala:96)
+	at scala.meta.internal.mtags.Mtags.allSymbols(Mtags.scala:21)
+	at scala.meta.internal.mtags.SymbolIndexBucket.allSymbols(SymbolIndexBucket.scala:279)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:290)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:301)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:205)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:205)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:210)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:205)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:178)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:159)
+	at scala.collection.immutable.List.flatMap(List.scala:294)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:159)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:129)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:49)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:51)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:44)
+	at dotty.tools.pc.utils.MtagsEnrichments$.symbolDocumentation(MtagsEnrichments.scala:283)
+	at dotty.tools.pc.HoverProvider$.$anonfun$3(HoverProvider.scala:129)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at dotty.tools.pc.HoverProvider$.hover(HoverProvider.scala:129)
+	at dotty.tools.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:345)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:157)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:143)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:246)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2024.06.01 20:11:27 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:11:27 INFO  time: compiled root in 25ms[0m
+2024.06.01 20:11:29 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+Jun 01, 2024 8:11:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6177
+2024.06.01 20:11:32 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:12:15 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:12:15 INFO  time: compiled root in 0.11s[0m
+2024.06.01 20:12:34 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:12:34 INFO  time: compiled root in 26ms[0m
+2024.06.01 20:12:34 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:12:51 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:13:08 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:13:11 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:13:16 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:13:21 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:13:25 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:13:26 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:13:26 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:13:27 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:13:27 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:13:39 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:13:39 INFO  time: compiled root in 46ms[0m
+2024.06.01 20:13:42 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:13:42 INFO  time: compiled root in 40ms[0m
+2024.06.01 20:13:46 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:13:59 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:14:05 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:14:08 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:14:08 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:14:09 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:14:09 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:14:12 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/POI.scala[0m
+2024.06.01 20:14:19 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:14:19 INFO  time: compiled root in 37ms[0m
+Jun 01, 2024 8:14:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6711
+Jun 01, 2024 8:14:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6714
+Jun 01, 2024 8:15:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6745
+2024.06.01 20:15:21 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:15:21 INFO  time: compiled root in 28ms[0m
+2024.06.01 20:15:28 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:15:28 INFO  time: compiled root in 0.11s[0m
+2024.06.01 20:15:31 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:15:31 INFO  time: compiled root in 97ms[0m
+2024.06.01 20:16:12 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:16:12 INFO  time: compiled root in 79ms[0m
+Jun 01, 2024 8:16:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7119
+Jun 01, 2024 8:16:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7175
+2024.06.01 20:18:55 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:18:55 INFO  time: compiled root in 83ms[0m
+2024.06.01 20:19:17 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:19:17 INFO  time: compiled root in 80ms[0m
+Jun 01, 2024 8:19:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7280
+Jun 01, 2024 8:19:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7289
+Jun 01, 2024 8:19:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7301
+Jun 01, 2024 8:20:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7345
+Jun 01, 2024 8:20:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7346
+2024.06.01 20:20:16 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:20:16 INFO  time: compiled root in 74ms[0m
+2024.06.01 20:21:11 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:11 INFO  time: compiled root in 36ms[0m
+2024.06.01 20:21:19 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:19 INFO  time: compiled root in 56ms[0m
+2024.06.01 20:21:19 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:19 INFO  time: compiled root in 70ms[0m
+2024.06.01 20:21:19 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:19 INFO  time: compiled root in 59ms[0m
+2024.06.01 20:21:19 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:19 INFO  time: compiled root in 64ms[0m
+2024.06.01 20:21:19 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:19 INFO  time: compiled root in 74ms[0m
+2024.06.01 20:21:19 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:20 INFO  time: compiled root in 62ms[0m
+2024.06.01 20:21:20 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:20 INFO  time: compiled root in 57ms[0m
+2024.06.01 20:21:20 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:20 INFO  time: compiled root in 61ms[0m
+2024.06.01 20:21:20 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:20 INFO  time: compiled root in 52ms[0m
+2024.06.01 20:21:20 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:20 INFO  time: compiled root in 53ms[0m
+2024.06.01 20:21:21 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:21 INFO  time: compiled root in 54ms[0m
+Jun 01, 2024 8:21:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/ilya/programming/tasks/class/game/.metals/.reports/metals-full/2024-06-01/r_compiler-error_(root)_20-21-22-000.md
+2024.06.01 20:21:21 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:21 INFO  time: compiled root in 51ms[0m
+Jun 01, 2024 8:21:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/ilya/programming/tasks/class/game/.metals/.reports/metals-full/2024-06-01/r_compiler-error_(root)_20-21-22-939.md
+2024.06.01 20:21:45 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:21:45 INFO  time: compiled root in 84ms[0m
+Jun 01, 2024 8:21:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/ilya/programming/tasks/class/game/.metals/.reports/metals-full/2024-06-01/r_compiler-error_(root)_20-21-46-811.md
+Jun 01, 2024 8:21:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/ilya/programming/tasks/class/game/.metals/.reports/metals-full/2024-06-01/r_compiler-error_(root)_20-21-49-193.md
+2024.06.01 20:22:06 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:22:06 INFO  time: compiled root in 82ms[0m
+2024.06.01 20:23:07 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:23:07 INFO  time: compiled root in 0.22s[0m
+2024.06.01 20:23:08 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:23:08 INFO  time: compiled root in 0.18s[0m
+Jun 01, 2024 8:23:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7913
+Jun 01, 2024 8:23:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7929
+Jun 01, 2024 8:23:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7938
+2024.06.01 20:23:35 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:23:35 INFO  time: compiled root in 0.24s[0m
+2024.06.01 20:23:46 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:23:46 INFO  time: compiled root in 0.18s[0m
+2024.06.01 20:23:47 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:23:47 INFO  time: compiled root in 0.19s[0m
+2024.06.01 20:24:05 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:24:05 INFO  time: compiled root in 0.14s[0m
+2024.06.01 20:24:38 INFO  no build target found for /scala/Option.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+Jun 01, 2024 8:25:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8187
+2024.06.01 20:25:18 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:25:18 INFO  time: compiled root in 0.16s[0m
+2024.06.01 20:25:26 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:25:26 INFO  time: compiled root in 0.14s[0m
+Jun 01, 2024 8:25:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8228
+Jun 01, 2024 8:26:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8254
+Jun 01, 2024 8:26:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8268
+2024.06.01 20:27:25 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:27:25 INFO  time: compiled root in 0.14s[0m
+2024.06.01 20:27:25 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:27:25 INFO  time: compiled root in 0.15s[0m
+Jun 01, 2024 8:27:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8419
+2024.06.01 20:28:04 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:28:04 INFO  time: compiled root in 0.16s[0m
+Jun 01, 2024 8:28:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8573
+2024.06.01 20:28:49 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:28:49 INFO  time: compiled root in 0.12s[0m
+2024.06.01 20:29:00 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:29:00 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:29:00 INFO  time: compiled root in 30ms[0m
+2024.06.01 20:29:00 INFO  Deduplicating compilation of root from bsp client 'Metals 1.3.1' (since 1h 15m 41.68s)[0m
+2024.06.01 20:29:00 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:29:00 INFO  time: compiled root in 97ms[0m
+2024.06.01 20:29:00 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:29:00 INFO  time: compiled root in 0.14s[0m
+Jun 01, 2024 8:31:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 4
+
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 4
+
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 4
+
+	at org.scalameta.invariants.InvariantFailedException$.raise(InvariantFailedException.scala:27)
+	at scala.meta.Init$.apply(Trees.scala:881)
+	at scala.meta.Init$.apply(Trees.scala:880)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$initRest$1(ScalametaParser.scala:4244)
+	at scala.meta.internal.parsers.ScalametaParser.atPosOpt(ScalametaParser.scala:319)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosOpt(ScalametaParser.scala:366)
+	at scala.meta.internal.parsers.ScalametaParser.initRest(ScalametaParser.scala:4206)
+	at scala.meta.internal.parsers.ScalametaParser.initInsideTemplate(ScalametaParser.scala:4188)
+	at scala.meta.internal.parsers.ScalametaParser.init(ScalametaParser.scala:4328)
+	at scala.meta.internal.parsers.ScalametaParser.templateParents(ScalametaParser.scala:4338)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:4386)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:4374)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4412)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4404)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$traitDef$1(ScalametaParser.scala:4008)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:368)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:373)
+	at scala.meta.internal.parsers.ScalametaParser.traitDef(ScalametaParser.scala:3987)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3967)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3956)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4546)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4537)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$13(ScalametaParser.scala:4771)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4727)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4725)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:135)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:59)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:54)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:132)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:151)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:142)
+	at scala.meta.internal.parsing.Trees.didChange(Trees.scala:101)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$parseTreesAndPublishDiags$2(MetalsLspService.scala:874)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Jun 01, 2024 8:31:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 44
+
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 44
+
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 44
+
+	at org.scalameta.invariants.InvariantFailedException$.raise(InvariantFailedException.scala:27)
+	at scala.meta.Init$.apply(Trees.scala:881)
+	at scala.meta.Init$.apply(Trees.scala:880)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$initRest$1(ScalametaParser.scala:4244)
+	at scala.meta.internal.parsers.ScalametaParser.atPosOpt(ScalametaParser.scala:319)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosOpt(ScalametaParser.scala:366)
+	at scala.meta.internal.parsers.ScalametaParser.initRest(ScalametaParser.scala:4206)
+	at scala.meta.internal.parsers.ScalametaParser.initInsideTemplate(ScalametaParser.scala:4188)
+	at scala.meta.internal.parsers.ScalametaParser.init(ScalametaParser.scala:4328)
+	at scala.meta.internal.parsers.ScalametaParser.templateParents(ScalametaParser.scala:4338)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:4386)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:4374)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4412)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4404)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$traitDef$1(ScalametaParser.scala:4008)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:368)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:373)
+	at scala.meta.internal.parsers.ScalametaParser.traitDef(ScalametaParser.scala:3987)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3967)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3956)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4546)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4537)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$13(ScalametaParser.scala:4771)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4727)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4725)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:135)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:59)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:54)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:132)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:151)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:142)
+	at scala.meta.internal.parsing.Trees.didChange(Trees.scala:101)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$parseTreesAndPublishDiags$2(MetalsLspService.scala:874)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Jun 01, 2024 8:31:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 4
+
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 4
+
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 4
+
+	at org.scalameta.invariants.InvariantFailedException$.raise(InvariantFailedException.scala:27)
+	at scala.meta.Init$.apply(Trees.scala:881)
+	at scala.meta.Init$.apply(Trees.scala:880)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$initRest$1(ScalametaParser.scala:4244)
+	at scala.meta.internal.parsers.ScalametaParser.atPosOpt(ScalametaParser.scala:319)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosOpt(ScalametaParser.scala:366)
+	at scala.meta.internal.parsers.ScalametaParser.initRest(ScalametaParser.scala:4206)
+	at scala.meta.internal.parsers.ScalametaParser.initInsideTemplate(ScalametaParser.scala:4188)
+	at scala.meta.internal.parsers.ScalametaParser.init(ScalametaParser.scala:4328)
+	at scala.meta.internal.parsers.ScalametaParser.templateParents(ScalametaParser.scala:4338)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:4386)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:4374)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4412)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4404)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$traitDef$1(ScalametaParser.scala:4008)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:368)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:373)
+	at scala.meta.internal.parsers.ScalametaParser.traitDef(ScalametaParser.scala:3987)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3967)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3956)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4546)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4537)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$13(ScalametaParser.scala:4771)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4727)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4725)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:135)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:59)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:54)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:132)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:151)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:142)
+	at scala.meta.internal.parsing.Trees.didChange(Trees.scala:101)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$parseTreesAndPublishDiags$2(MetalsLspService.scala:874)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Jun 01, 2024 8:31:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = $ {
+    val occupant: Option[Creature] = None
+}
+
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = $ {
+    val occupant: Option[Creature] = None
+}
+
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = $ {
+    val occupant: Option[Creature] = None
+}
+
+	at org.scalameta.invariants.InvariantFailedException$.raise(InvariantFailedException.scala:27)
+	at scala.meta.Init$.apply(Trees.scala:881)
+	at scala.meta.Init$.apply(Trees.scala:880)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$initRest$1(ScalametaParser.scala:4244)
+	at scala.meta.internal.parsers.ScalametaParser.atPosOpt(ScalametaParser.scala:319)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosOpt(ScalametaParser.scala:366)
+	at scala.meta.internal.parsers.ScalametaParser.initRest(ScalametaParser.scala:4206)
+	at scala.meta.internal.parsers.ScalametaParser.initInsideTemplate(ScalametaParser.scala:4188)
+	at scala.meta.internal.parsers.ScalametaParser.init(ScalametaParser.scala:4328)
+	at scala.meta.internal.parsers.ScalametaParser.templateParents(ScalametaParser.scala:4338)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:4386)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:4374)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4412)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4404)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$traitDef$1(ScalametaParser.scala:4008)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:368)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:373)
+	at scala.meta.internal.parsers.ScalametaParser.traitDef(ScalametaParser.scala:3987)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3967)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3956)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4546)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4537)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$13(ScalametaParser.scala:4771)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4727)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4725)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:135)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:59)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:54)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:132)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:151)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:142)
+	at scala.meta.internal.parsing.Trees.didChange(Trees.scala:101)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$parseTreesAndPublishDiags$2(MetalsLspService.scala:874)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.06.01 20:31:56 INFO  compiling root (3 scala sources)[0m
+2024.06.01 20:31:56 INFO  time: compiled root in 0.14s[0m
+Jun 01, 2024 8:31:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = $ {
+    val occupant: Option[Creature] = None
+}
+
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = $ {
+    val occupant: Option[Creature] = None
+}
+
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = $ {
+    val occupant: Option[Creature] = None
+}
+
+	at org.scalameta.invariants.InvariantFailedException$.raise(InvariantFailedException.scala:27)
+	at scala.meta.Init$.apply(Trees.scala:881)
+	at scala.meta.Init$.apply(Trees.scala:880)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$initRest$1(ScalametaParser.scala:4244)
+	at scala.meta.internal.parsers.ScalametaParser.atPosOpt(ScalametaParser.scala:319)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosOpt(ScalametaParser.scala:366)
+	at scala.meta.internal.parsers.ScalametaParser.initRest(ScalametaParser.scala:4206)
+	at scala.meta.internal.parsers.ScalametaParser.initInsideTemplate(ScalametaParser.scala:4188)
+	at scala.meta.internal.parsers.ScalametaParser.init(ScalametaParser.scala:4328)
+	at scala.meta.internal.parsers.ScalametaParser.templateParents(ScalametaParser.scala:4338)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:4386)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:4374)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4412)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4404)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$traitDef$1(ScalametaParser.scala:4008)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:368)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:373)
+	at scala.meta.internal.parsers.ScalametaParser.traitDef(ScalametaParser.scala:3987)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3967)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3956)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4546)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4537)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$13(ScalametaParser.scala:4771)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4727)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4725)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:135)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:59)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:54)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:132)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:151)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:142)
+	at scala.meta.internal.parsing.Trees.didChange(Trees.scala:101)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$parseTreesAndPublishDiags$2(MetalsLspService.scala:874)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Jun 01, 2024 8:32:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 44
+
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 44
+
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 44
+
+	at org.scalameta.invariants.InvariantFailedException$.raise(InvariantFailedException.scala:27)
+	at scala.meta.Init$.apply(Trees.scala:881)
+	at scala.meta.Init$.apply(Trees.scala:880)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$initRest$1(ScalametaParser.scala:4244)
+	at scala.meta.internal.parsers.ScalametaParser.atPosOpt(ScalametaParser.scala:319)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosOpt(ScalametaParser.scala:366)
+	at scala.meta.internal.parsers.ScalametaParser.initRest(ScalametaParser.scala:4206)
+	at scala.meta.internal.parsers.ScalametaParser.initInsideTemplate(ScalametaParser.scala:4188)
+	at scala.meta.internal.parsers.ScalametaParser.init(ScalametaParser.scala:4328)
+	at scala.meta.internal.parsers.ScalametaParser.templateParents(ScalametaParser.scala:4338)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:4386)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:4374)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4412)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4404)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$traitDef$1(ScalametaParser.scala:4008)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:368)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:373)
+	at scala.meta.internal.parsers.ScalametaParser.traitDef(ScalametaParser.scala:3987)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3967)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3956)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4546)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4537)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$13(ScalametaParser.scala:4771)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4727)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4725)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:135)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:59)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:54)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:132)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:151)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:142)
+	at scala.meta.internal.parsing.Trees.didChange(Trees.scala:101)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$parseTreesAndPublishDiags$2(MetalsLspService.scala:874)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Jun 01, 2024 8:32:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 4
+
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 4
+
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = 4
+
+	at org.scalameta.invariants.InvariantFailedException$.raise(InvariantFailedException.scala:27)
+	at scala.meta.Init$.apply(Trees.scala:881)
+	at scala.meta.Init$.apply(Trees.scala:880)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$initRest$1(ScalametaParser.scala:4244)
+	at scala.meta.internal.parsers.ScalametaParser.atPosOpt(ScalametaParser.scala:319)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosOpt(ScalametaParser.scala:366)
+	at scala.meta.internal.parsers.ScalametaParser.initRest(ScalametaParser.scala:4206)
+	at scala.meta.internal.parsers.ScalametaParser.initInsideTemplate(ScalametaParser.scala:4188)
+	at scala.meta.internal.parsers.ScalametaParser.init(ScalametaParser.scala:4328)
+	at scala.meta.internal.parsers.ScalametaParser.templateParents(ScalametaParser.scala:4338)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:4386)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:4374)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4412)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4404)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$traitDef$1(ScalametaParser.scala:4008)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:368)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:373)
+	at scala.meta.internal.parsers.ScalametaParser.traitDef(ScalametaParser.scala:3987)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3967)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3956)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$2.applyOrElse(ScalametaParser.scala:4546)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4537)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$13(ScalametaParser.scala:4771)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4727)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:365)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4720)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4725)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:135)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:59)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:54)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:132)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:151)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:142)
+	at scala.meta.internal.parsing.Trees.didChange(Trees.scala:101)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$parseTreesAndPublishDiags$2(MetalsLspService.scala:874)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.06.01 20:32:03 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:32:03 INFO  time: compiled root in 0.11s[0m
+Jun 01, 2024 8:32:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8861
+Jun 01, 2024 8:32:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8862
+Jun 01, 2024 8:32:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8863
+Jun 01, 2024 8:32:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8864
+Jun 01, 2024 8:32:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8865
+2024.06.01 20:33:27 ERROR Failed to tokenize input for semantic tokens for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: unclosed character literal
+    def vpustit'  
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:414)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:419)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.06.01 20:33:29 INFO  compiling root (3 scala sources)[0m
+2024.06.01 20:33:29 INFO  time: compiled root in 0.13s[0m
+2024.06.01 20:33:29 ERROR Failed to tokenize input for semantic tokens for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: unclosed character literal
+    def vpustit'  
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:414)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:419)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.06.01 20:33:33 ERROR Failed to tokenize input for semantic tokens for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: unclosed character literal
+    def vpustit'()  
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:414)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:419)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.06.01 20:33:35 ERROR Failed to tokenize input for semantic tokens for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: unclosed character literal
+    def vpustit'( )  
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:414)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:419)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.06.01 20:33:36 ERROR Failed to tokenize input for semantic tokens for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: unclosed character literal
+    def vpustit'  
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:414)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:419)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.06.01 20:33:37 ERROR Failed to tokenize input for semantic tokens for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: unclosed character literal
+    def vpustit'   
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:414)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:419)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.06.01 20:33:38 ERROR Failed to tokenize input for semantic tokens for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: unclosed character literal
+    def vpustit' +  
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:414)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:419)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.06.01 20:33:39 ERROR Failed to tokenize input for semantic tokens for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: unclosed character literal
+    def vpustit' =  
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:414)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:419)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.06.01 20:33:40 INFO  compiling root (3 scala sources)[0m
+2024.06.01 20:33:40 INFO  time: compiled root in 0.14s[0m
+2024.06.01 20:33:40 ERROR Failed to tokenize input for semantic tokens for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: unclosed character literal
+    def vpustit' =  
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:414)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:419)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+Jun 01, 2024 8:33:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9054
+Jun 01, 2024 8:33:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9058
+2024.06.01 20:34:01 INFO  compiling root (3 scala sources)[0m
+2024.06.01 20:34:01 INFO  time: compiled root in 0.11s[0m
+Jun 01, 2024 8:34:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9202
+2024.06.01 20:34:32 INFO  compiling root (3 scala sources)[0m
+2024.06.01 20:34:32 INFO  time: compiled root in 0.12s[0m
+2024.06.01 20:34:39 INFO  compiling root (3 scala sources)[0m
+2024.06.01 20:34:39 INFO  time: compiled root in 0.12s[0m
+Jun 01, 2024 8:35:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9345
+Jun 01, 2024 8:35:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9371
+2024.06.01 20:35:40 INFO  no build target found for /scala/util/Random.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.06.01 20:35:42 INFO  compiling root (3 scala sources)[0m
+2024.06.01 20:35:42 INFO  time: compiled root in 0.14s[0m
+2024.06.01 20:35:45 INFO  compiling root (3 scala sources)[0m
+2024.06.01 20:35:45 INFO  time: compiled root in 0.12s[0m
+2024.06.01 20:36:23 INFO  compiling root (3 scala sources)[0m
+2024.06.01 20:36:23 INFO  time: compiled root in 0.21s[0m
+2024.06.01 20:36:23 INFO  compiling root (6 scala sources)[0m
+2024.06.01 20:36:23 INFO  time: compiled root in 0.19s[0m
+Jun 01, 2024 8:36:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9540
+2024.06.01 20:36:59 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:36:59 INFO  time: compiled root in 37ms[0m
+2024.06.01 20:36:59 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Creature.scala[0m
+2024.06.01 20:37:01 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Creature.scala[0m
+2024.06.01 20:37:02 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Creature.scala[0m
+2024.06.01 20:37:03 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Creature.scala[0m
+2024.06.01 20:37:03 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Creature.scala[0m
+2024.06.01 20:37:03 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:37:03 INFO  time: compiled root in 0.11s[0m
+Jun 01, 2024 8:37:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9616
+Jun 01, 2024 8:37:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9632
+Jun 01, 2024 8:37:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9667
+Jun 01, 2024 8:37:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9693
+Jun 01, 2024 8:37:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9704
+Jun 01, 2024 8:37:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9726
+Jun 01, 2024 8:37:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9746
+Jun 01, 2024 8:37:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9825
+2024.06.01 20:37:56 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:37:57 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:37:57 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:37:57 INFO  time: compiled root in 47ms[0m
+Jun 01, 2024 8:38:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9840
+2024.06.01 20:38:01 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:38:01 INFO  time: compiled root in 29ms[0m
+2024.06.01 20:38:01 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala[0m
+Jun 01, 2024 8:38:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9860
+2024.06.01 20:38:28 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:38:28 INFO  time: compiled root in 27ms[0m
+2024.06.01 20:38:31 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:39:04 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:39:06 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:39:06 INFO  time: compiled root in 37ms[0m
+2024.06.01 20:39:10 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala[0m
+2024.06.01 20:39:18 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala[0m
+2024.06.01 20:39:22 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala[0m
+2024.06.01 20:39:22 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala[0m
+2024.06.01 20:39:22 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala[0m
+2024.06.01 20:39:23 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:39:23 INFO  time: compiled root in 79ms[0m
+Jun 01, 2024 8:39:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10036
+Jun 01, 2024 8:39:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10047
+2024.06.01 20:39:34 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:39:34 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:39:35 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:39:35 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:39:35 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:39:36 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+Jun 01, 2024 8:39:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10075
+Jun 01, 2024 8:39:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10080
+2024.06.01 20:39:54 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:39:54 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:39:54 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:39:54 INFO  time: compiled root in 43ms[0m
+2024.06.01 20:39:54 INFO  compiling root (6 scala sources)[0m
+2024.06.01 20:39:54 INFO  time: compiled root in 78ms[0m
+2024.06.01 20:39:55 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+Jun 01, 2024 8:39:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10253
+2024.06.01 20:40:22 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:40:23 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:40:24 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:40:26 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:40:28 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:40:29 ERROR scalafmt: /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala:6: error: [dialect scala3] ) expected but } found
+}
+^[0m
+2024.06.01 20:40:31 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:40:32 ERROR scalafmt: /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala:5: error: [dialect scala3] Procedure syntax is not supported. Convert procedure `letIn` to method by adding `: Unit =`.
+    override def letIn(Creature:Int) 
+                 ^[0m
+2024.06.01 20:40:32 ERROR scalafmt: /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala:5: error: [dialect scala3] Procedure syntax is not supported. Convert procedure `letIn` to method by adding `: Unit =`.
+    override def letIn(Creature:Int) 
+                 ^[0m
+2024.06.01 20:40:33 ERROR scalafmt: /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala:5: error: [dialect scala3] Procedure syntax is not supported. Convert procedure `letIn` to method by adding `: Unit =`.
+    override def letIn(Creature:Int) 
+                 ^[0m
+2024.06.01 20:40:33 ERROR scalafmt: /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala:5: error: [dialect scala3] Procedure syntax is not supported. Convert procedure `letIn` to method by adding `: Unit =`.
+    override def letIn(Creature:Int) 
+                 ^[0m
+2024.06.01 20:40:39 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:40:39 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:40:39 INFO  time: compiled root in 43ms[0m
+2024.06.01 20:40:39 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:40:42 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:40:42 INFO  time: compiled root in 31ms[0m
+2024.06.01 20:40:47 INFO  compiling root (2 scala sources)[0m
+2024.06.01 20:40:47 INFO  time: compiled root in 32ms[0m
+2024.06.01 20:41:03 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:41:03 INFO  time: compiled root in 40ms[0m
+2024.06.01 20:41:04 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:41:07 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:41:07 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:41:07 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:41:09 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:41:10 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+Jun 01, 2024 8:41:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10556
+2024.06.01 20:42:14 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:42:14 INFO  time: compiled root in 94ms[0m
+Jun 01, 2024 8:42:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10760
+Jun 01, 2024 8:43:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10820
+Jun 01, 2024 8:43:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10830
+Jun 01, 2024 8:43:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10843
+2024.06.01 20:43:41 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:43:41 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:43:41 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:43:42 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:43:42 INFO  time: compiled root in 34ms[0m
+Jun 01, 2024 8:43:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10890
+2024.06.01 20:43:45 INFO  Deduplicating compilation of root from bsp client 'Metals 1.3.1' (since 1h 30m 26.761s)[0m
+Jun 01, 2024 8:43:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10909
+Jun 01, 2024 8:43:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10923
+Jun 01, 2024 8:43:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10964
+2024.06.01 20:44:03 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:44:03 INFO  time: compiled root in 37ms[0m
+2024.06.01 20:45:33 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:45:33 INFO  time: compiled root in 34ms[0m
+Jun 01, 2024 8:45:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11087
+Jun 01, 2024 8:49:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11133
+Jun 01, 2024 8:49:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11196
+Jun 01, 2024 8:50:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11588
+Jun 01, 2024 8:50:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11609
+2024.06.01 20:50:54 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:50:54 INFO  time: compiled root in 34ms[0m
+2024.06.01 20:50:57 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:50:57 INFO  time: compiled root in 27ms[0m
+2024.06.01 20:51:00 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:51:00 INFO  time: compiled root in 98ms[0m
+Jun 01, 2024 8:51:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11886
+Jun 01, 2024 8:51:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11989
+2024.06.01 20:51:21 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:51:21 INFO  time: compiled root in 0.11s[0m
+2024.06.01 20:51:36 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:51:36 INFO  time: compiled root in 91ms[0m
+2024.06.01 20:52:23 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:52:23 INFO  time: compiled root in 50ms[0m
+2024.06.01 20:52:53 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:52:53 INFO  time: compiled root in 95ms[0m
+2024.06.01 20:52:56 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:52:56 INFO  time: compiled root in 43ms[0m
+2024.06.01 20:53:17 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:53:30 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:53:44 INFO  file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala:21:28: stale bloop error: Not found: type Creature_
+    case Cheto(entityType: Creature_) => ???
+                           ^^^^^^^^^[0m
+2024.06.01 20:53:44 INFO  file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala:22:28: stale bloop error: Not found: type Visitable_
+    case Cheto(entityType: Visitable_) => ??? 
+                           ^^^^^^^^^^[0m
+2024.06.01 20:53:44 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:53:53 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:53:55 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:53:56 WARN  Could not find semantic tokens for: file:///home/ilya/programming/tasks/class/game/src/main/scala/Entity.scala[0m
+2024.06.01 20:53:58 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:53:58 INFO  time: compiled root in 44ms[0m
+Jun 01, 2024 8:55:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12724
+Jun 01, 2024 8:57:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12756
+Jun 01, 2024 8:57:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12762
+2024.06.01 20:57:32 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:57:32 INFO  time: compiled root in 0.13s[0m
+2024.06.01 20:57:42 WARN  Using indexes to guess the definition of Player[0m
+2024.06.01 20:57:48 WARN  Using indexes to guess the definition of Player[0m
+2024.06.01 20:57:48 WARN  Using indexes to guess the definition of Player[0m
+2024.06.01 20:57:49 WARN  Using indexes to guess the definition of Player[0m
+2024.06.01 20:57:58 INFO  no build target found for /scala/Array.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+Jun 01, 2024 8:57:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12859
+2024.06.01 20:58:31 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:58:31 INFO  time: compiled root in 0.14s[0m
+2024.06.01 20:58:43 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:58:43 INFO  time: compiled root in 0.12s[0m
+Jun 01, 2024 8:59:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13045
+Jun 01, 2024 8:59:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13063
+Jun 01, 2024 8:59:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13071
+Jun 01, 2024 8:59:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13072
+2024.06.01 20:59:25 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:59:25 INFO  time: compiled root in 0.12s[0m
+2024.06.01 20:59:58 INFO  compiling root (1 scala source)[0m
+2024.06.01 20:59:58 INFO  time: compiled root in 0.13s[0m
+2024.06.01 21:00:09 INFO  no build target found for /scala/collection/ArrayOps.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.06.01 21:00:22 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:00:22 INFO  time: compiled root in 0.13s[0m
+Jun 01, 2024 9:00:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13246
+2024.06.01 21:00:36 ERROR Failed to tokenize input for semantic tokens for /home/ilya/programming/tasks/class/game/src/main/scala/World.scala
+scala.meta.tokenizers.TokenizeException: <input>:44: error: unclosed string literal
+      case Some(enemy: Enemy)       ="
+                                     ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:560)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:379)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:383)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.06.01 21:00:41 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:00:41 INFO  time: compiled root in 0.11s[0m
+Jun 01, 2024 9:00:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13312
+2024.06.01 21:01:27 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:01:27 INFO  time: compiled root in 81ms[0m
+Jun 01, 2024 9:01:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13437
+Jun 01, 2024 9:01:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13451
+Jun 01, 2024 9:01:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13452
+Jun 01, 2024 9:01:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13453
+Jun 01, 2024 9:01:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13454
+Jun 01, 2024 9:01:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13456
+Jun 01, 2024 9:01:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13458
+Jun 01, 2024 9:01:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13459
+Jun 01, 2024 9:01:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13460
+Jun 01, 2024 9:01:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13461
+Jun 01, 2024 9:01:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13571
+2024.06.01 21:02:03 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:02:03 INFO  time: compiled root in 27ms[0m
+2024.06.01 21:02:05 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:02:05 INFO  time: compiled root in 27ms[0m
+Jun 01, 2024 9:02:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13640
+Jun 01, 2024 9:02:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13641
+2024.06.01 21:02:05 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:02:05 INFO  time: compiled root in 24ms[0m
+2024.06.01 21:02:05 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:02:05 INFO  time: compiled root in 25ms[0m
+2024.06.01 21:02:24 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:02:24 INFO  time: compiled root in 58ms[0m
+Jun 01, 2024 9:02:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/ilya/programming/tasks/class/game/.metals/.reports/metals-full/2024-06-01/r_compiler-error_(root)_21-02-26-318.md
+2024.06.01 21:02:27 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:02:27 INFO  time: compiled root in 59ms[0m
+Jun 01, 2024 9:02:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/ilya/programming/tasks/class/game/.metals/.reports/metals-full/2024-06-01/r_compiler-error_(root)_21-02-27-748.md
+2024.06.01 21:02:27 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:02:27 INFO  Deduplicating compilation of root from bsp client 'Metals 1.3.1' (since 1h 49m 8.865s)[0m
+2024.06.01 21:02:27 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:02:27 INFO  time: compiled root in 33ms[0m
+Jun 01, 2024 9:04:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13944
+2024.06.01 21:04:30 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:04:30 INFO  time: compiled root in 28ms[0m
+2024.06.01 21:04:31 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:04:31 INFO  time: compiled root in 36ms[0m
+2024.06.01 21:04:31 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:04:31 INFO  time: compiled root in 51ms[0m
+2024.06.01 21:04:31 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:04:31 INFO  time: compiled root in 36ms[0m
+Jun 01, 2024 9:04:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14070
+Jun 01, 2024 9:04:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14093
+2024.06.01 21:05:53 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:05:53 INFO  time: compiled root in 74ms[0m
+Jun 01, 2024 9:06:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14189
+2024.06.01 21:06:19 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:06:19 INFO  time: compiled root in 36ms[0m
+Jun 01, 2024 9:06:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14339
+Jun 01, 2024 9:07:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14528
+2024.06.01 21:07:26 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:07:26 INFO  time: compiled root in 35ms[0m
+Jun 01, 2024 9:07:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14568
+Jun 01, 2024 9:07:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14570
+Jun 01, 2024 9:07:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14601
+Jun 01, 2024 9:07:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14610
+Jun 01, 2024 9:07:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14620
+Jun 01, 2024 9:08:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14656
+Jun 01, 2024 9:11:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14745
+2024.06.01 21:12:03 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:12:03 INFO  time: compiled root in 88ms[0m
+2024.06.01 21:12:24 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:12:24 INFO  time: compiled root in 0.1s[0m
+2024.06.01 21:13:23 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:13:23 INFO  time: compiled root in 39ms[0m
+2024.06.01 21:13:25 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:13:25 INFO  time: compiled root in 72ms[0m
+2024.06.01 21:14:21 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:14:21 INFO  time: compiled root in 30ms[0m
+2024.06.01 21:14:37 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:14:37 INFO  time: compiled root in 46ms[0m
+2024.06.01 21:14:57 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:14:57 INFO  time: compiled root in 78ms[0m
+Jun 01, 2024 9:15:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15341
+Jun 01, 2024 9:15:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15342
+Jun 01, 2024 9:15:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15367
+Jun 01, 2024 9:21:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15675
+2024.06.01 21:21:48 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:21:48 INFO  time: compiled root in 0.11s[0m
+Jun 01, 2024 9:23:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15929
+2024.06.01 21:23:37 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:23:37 INFO  time: compiled root in 71ms[0m
+Jun 01, 2024 9:23:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16003
+2024.06.01 21:23:44 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:23:44 INFO  time: compiled root in 59ms[0m
+Jun 01, 2024 9:24:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16217
+2024.06.01 21:24:40 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:24:40 INFO  time: compiled root in 57ms[0m
+Jun 01, 2024 9:24:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16237
+2024.06.01 21:25:11 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:25:11 INFO  time: compiled root in 58ms[0m
+2024.06.01 21:28:18 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:28:18 INFO  time: compiled root in 73ms[0m
+2024.06.01 21:28:25 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:28:25 INFO  time: compiled root in 0.12s[0m
+2024.06.01 21:28:49 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:28:49 INFO  time: compiled root in 0.11s[0m
+2024.06.01 21:29:13 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:29:13 INFO  time: compiled root in 69ms[0m
+2024.06.01 21:29:34 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:29:34 INFO  time: compiled root in 0.12s[0m
+Jun 01, 2024 9:32:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16659
+2024.06.01 21:32:24 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:32:24 INFO  time: compiled root in 58ms[0m
+2024.06.01 21:32:27 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:32:27 INFO  time: compiled root in 0.1s[0m
+2024.06.01 21:32:38 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:32:38 INFO  time: compiled root in 35ms[0m
+2024.06.01 21:32:38 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:32:38 INFO  time: compiled root in 32ms[0m
+Jun 01, 2024 9:33:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16926
+Jun 01, 2024 9:33:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16934
+2024.06.01 21:34:00 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:34:00 INFO  time: compiled root in 52ms[0m
+2024.06.01 21:35:01 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:35:01 INFO  time: compiled root in 0.37s[0m
+2024.06.01 21:35:12 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:35:12 INFO  time: compiled root in 52ms[0m
+2024.06.01 21:35:15 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:35:15 INFO  time: compiled root in 0.11s[0m
+2024.06.01 21:35:38 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:35:38 INFO  time: compiled root in 0.11s[0m
+2024.06.01 21:37:07 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:37:07 INFO  time: compiled root in 0.11s[0m
+Jun 01, 2024 9:37:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17174
+Jun 01, 2024 9:41:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17633
+2024.06.01 21:42:35 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:42:35 INFO  time: compiled root in 35ms[0m
+Jun 01, 2024 9:42:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17769
+2024.06.01 21:43:28 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:43:28 INFO  time: compiled root in 44ms[0m
+2024.06.01 21:44:01 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:44:01 INFO  time: compiled root in 40ms[0m
+2024.06.01 21:44:22 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:44:22 INFO  time: compiled root in 43ms[0m
+2024.06.01 21:44:26 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:44:26 INFO  time: compiled root in 38ms[0m
+2024.06.01 21:44:33 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:44:33 INFO  time: compiled root in 47ms[0m
+2024.06.01 21:45:38 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:45:38 INFO  time: compiled root in 38ms[0m
+2024.06.01 21:45:38 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:45:38 INFO  time: compiled root in 33ms[0m
+2024.06.01 21:45:41 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:45:41 INFO  time: compiled root in 0.11s[0m
+2024.06.01 21:45:47 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:45:47 INFO  time: compiled root in 0.12s[0m
+2024.06.01 21:45:50 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:45:50 INFO  time: compiled root in 0.12s[0m
+2024.06.01 21:45:57 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:45:57 INFO  time: compiled root in 0.11s[0m
+2024.06.01 21:45:58 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:45:58 INFO  time: compiled root in 0.11s[0m
+2024.06.01 21:46:19 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:46:19 INFO  time: compiled root in 35ms[0m
+Jun 01, 2024 9:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18336
+2024.06.01 21:46:38 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:46:38 INFO  time: compiled root in 35ms[0m
+Jun 01, 2024 9:47:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18396
+2024.06.01 21:47:42 INFO  compiling root (2 scala sources)[0m
+2024.06.01 21:47:42 INFO  time: compiled root in 0.11s[0m
+2024.06.01 21:48:10 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:48:10 INFO  time: compiled root in 0.11s[0m
+2024.06.01 21:48:17 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:48:17 INFO  time: compiled root in 58ms[0m
+2024.06.01 21:48:18 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Creature.scala[0m
+2024.06.01 21:48:18 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Creature.scala[0m
+2024.06.01 21:48:18 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Creature.scala[0m
+2024.06.01 21:48:20 WARN  Could not load snapshot text for /home/ilya/programming/tasks/class/game/src/main/scala/Creature.scala[0m
+2024.06.01 21:48:20 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:48:20 INFO  time: compiled root in 0.12s[0m
+2024.06.01 21:48:46 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:48:46 INFO  time: compiled root in 0.11s[0m
+Jun 01, 2024 9:48:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18692
+Jun 01, 2024 9:49:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18785
+2024.06.01 21:51:29 INFO  compiling root (1 scala source)[0m
+2024.06.01 21:51:29 INFO  time: compiled root in 79ms[0m
+java.util.concurrent.RejectedExecutionException: Task Future(<not completed>) rejected from java.util.concurrent.ThreadPoolExecutor@2e32381c[Shutting down, pool size = 19, active threads = 4, queued tasks = 0, completed tasks = 326271]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2065)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:833)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1365)
+	at scala.concurrent.impl.ExecutionContextImpl.execute(ExecutionContextImpl.scala:21)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.handleFailure(Promise.scala:444)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:435)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+java.util.concurrent.RejectedExecutionException: Task Future(<not completed>) rejected from java.util.concurrent.ThreadPoolExecutor@2e32381c[Shutting down, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 326274]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2065)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:833)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1365)
+	at scala.concurrent.impl.ExecutionContextImpl.execute(ExecutionContextImpl.scala:21)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024.06.03 18:11:47 INFO  Started: Metals version 1.3.1 in folders '/home/ilya/programming/tasks/class/game' for client Visual Studio Code 1.89.1.[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@77c4b0f5]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@42ae811e]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@77c4b0f5]
+2024.06.03 18:11:47 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.06.03 18:11:47 INFO  Attempting to connect to the build server...[0m
+2024.06.03 18:11:48 INFO  no build target found for /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.06.03 18:11:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ilya/programming/tasks/class/game/.metals/bsp.trace.json or /home/ilya/.cache/metals/bsp.trace.json[0m
+2024.06.03 18:11:50 INFO  Attempting to connect to the build server...[0m
+2024.06.03 18:11:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ilya/programming/tasks/class/game/project/.metals/bsp.trace.json or /home/ilya/.cache/metals/bsp.trace.json[0m
+2024.06.03 18:11:50 INFO  time: Connected to build server in 2.57s[0m
+2024.06.03 18:11:50 INFO  Connected to Build server: Bloop v1.5.17[0m
+2024.06.03 18:11:53 INFO  time: indexed workspace in 3.04s[0m

@@ -1,19 +1,22 @@
-sealed trait Creature {
+sealed trait Creature extends Entity {
   var hp: Int
   val name: String
   var pos: Int = 0
   var potions: Int = 5
 
-  def move(s: String, world: World): Array[Option[Creature]] = {
-    world.worldMap(pos) = None
+  def move(s: String, world: World): Array[Option[Entity]] = {
+    world.worldMap(pos) match {
+    case Some(place: Visitable) => place.letOut()
+    case _ => world.worldMap(pos) = None
+    }
     pos = getNewPos(s)
     if pos <= -1 then pos = world.size - 1
     else if pos >= world.size then pos = 0
     world.worldMap(pos) match {
       case None => { world.worldMap(pos) = Option(this) }
-      case Some(enemy) => {
+      case Some(enemy: Creature) =>
         world.worldMap(pos) = Option(Fight(this, enemy).run())
-      }
+      case Some(place: Visitable) => place.letIn(this)
     }
     world.worldMap
   }
@@ -63,5 +66,3 @@ case class Player(
     case "," | "б" => { pos - 1 }
   }
 }
-trait A
-trait B extends A
