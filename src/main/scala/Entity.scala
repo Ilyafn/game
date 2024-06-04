@@ -1,1 +1,3 @@
-trait Entity
+trait Entity {
+    def update(): Entity = this
+}

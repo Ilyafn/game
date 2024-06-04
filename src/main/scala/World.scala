@@ -13,6 +13,8 @@ case class World(size: Int = 20) {
       }
       // print("\u001b[2J")
       print(this)
+
+      worldMap.map(optE => optE.map(_.update()))
       turn = turn + 1
     }
   }
@@ -36,8 +38,9 @@ case class World(size: Int = 20) {
   }
   def init(): Unit = {
     worldMap = Array.fill(size)(None)
-    val x = scala.util.Random.nextInt(size-1)
-    worldMap(x) = Some(Fountain())
+    val x = scala.util.Random.nextInt(size - 1)
+    val myCoolFountain: Fountain = Fountain()
+    worldMap(x) = Some(myCoolFountain)
     worldMap = worldMap.reverse
   }
   private def toStringHelper(optP: Option[Entity]): String = {
@@ -59,3 +62,5 @@ case class World(size: Int = 20) {
   }
 
 }
+
+
