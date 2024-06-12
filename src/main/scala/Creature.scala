@@ -3,11 +3,15 @@ sealed trait Creature extends Entity {
   val name: String
   var pos: Int = 0
   var potions: Int = 5
+  var isBlocking: Boolean = false
+  val sword: Sword = Sword(100)
+  val shield: Shield = Shield(50)
+  val armor: Armor = Armor(10)
 
   def move(s: String, world: World): Array[Option[Entity]] = {
     world.worldMap(pos) match {
-    case Some(place: Visitable) => place.letOut()
-    case _ => world.worldMap(pos) = None
+      case Some(place: Visitable) => place.letOut()
+      case _                      => world.worldMap(pos) = None
     }
     pos = getNewPos(s)
     if pos <= -1 then pos = world.size - 1
@@ -31,8 +35,12 @@ sealed trait Creature extends Entity {
   }
 
   def hit(s: Int, victim: Creature): Int = {
-    victim.damage(s)
+    if victim.isBlocking then victim.damage(s - 50) else victim.damage(s)
     victim.hp
+  }
+
+  def block(blockAmount: Int): Unit = {
+    isBlocking = true
   }
 
   def kill(): Unit = isAlive = false
@@ -54,6 +62,7 @@ case class Enemy(
 ) extends Creature {
 
   override def getNewPos(s: String): Int = pos
+  val queue: List[Action] = List[Action]()
 }
 
 case class Player(

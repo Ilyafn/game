@@ -18,11 +18,13 @@ case class Fight(player: Creature, enemy: Creature) {
     println("2 => block")
     println("3 => heal")
     readLine match {
-      case "1" => player.hit(100, enemy)
-      case "2" => player.hit(100, enemy)
+      case "1" => player.hit(player.sword.damage, enemy)
+      case "2" => player.block(player.shield.blockAmount)
       case "3" => player.heal()
-      case _ => player.hit(100, enemy)
+      case _ => player.hit(player.sword.damage, enemy)
     }
-    if enemy.isAlive then enemy.hit(100, player)
+    if enemy.isAlive then enemy.hit(enemy.sword.damage, player)
+    player.isBlocking = false
+    enemy.isBlocking = false
   }
 }
