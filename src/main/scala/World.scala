@@ -21,7 +21,7 @@ case class World(size: Int = 20) {
   var worldMap: Array[Option[Entity]] = Array()
   def optEnemy(): Option[Entity] = {
     val ran: Int = scala.util.Random.nextInt(5)
-    if ran == 0 then Option(Enemy(200, "Enemy"))
+    if ran == 0 then Option(Normal(200))
     else None
   }
   def populate() = {
@@ -45,10 +45,11 @@ case class World(size: Int = 20) {
   }
   private def toStringHelper(optP: Option[Entity]): String = {
     optP match {
-      case None                     => "_"
+
       case Some(player: Player)     => "P"
       case Some(enemy: Enemy)       => "X"
       case Some(fountain: Fountain) => "F"
+      case _                        => "_"
     }
   }
   override def toString(): String = {
@@ -62,5 +63,3 @@ case class World(size: Int = 20) {
   }
 
 }
-
-
