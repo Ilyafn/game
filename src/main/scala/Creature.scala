@@ -7,7 +7,25 @@ sealed trait Creature extends Entity {
   var sword: Option[Sword] = None
   var shield: Option[Shield] = None
   var armor: Option[Armor] = None
+  val inventory: Inventory = Inventory()
+  var xp: Int = 0
+  var level: Int = 0
 
+  def gainXp(amount: Int): Unit = {
+    xp = xp + amount
+    val nextlevelXpThreshold = 10*math.pow(2, level).toInt
+    if xp >= nextlevelXpThreshold then 
+      level = level + 1
+      xp = xp - nextlevelXpThreshold
+  }
+
+  def showInventory(): Unit = {
+    inventory.show(this)
+  }
+
+  def pickUp(loot: Inventory): Unit = {
+    inventory.addItems(loot.items)
+  }
   def move(s: String, world: World): Array[Option[Entity]] = {
     world.worldMap(pos) match {
       case Some(place: Visitable) => place.letOut()
@@ -35,23 +53,32 @@ sealed trait Creature extends Entity {
       if damage < armor then 0
       else damage - armor
     }
-
-    if armor.isDefined
-    then hp = hp - calculateDamage(armor.get.armor, s)
-    else hp = hp - s
-    if 0 >= hp then isAlive = false
+    val shieldBlockAmount: Int =
+      if isBlocking then
+        shield match {
+          case Some(shield) => shield.blockAmount
+          case None         => 5
+        }
+      else 0
+    val armorBlockAmount: Int = armor match {
+      case Some(armor) => armor.armor
+      case None        => 0
+    }
+    hp - calculateDamage(armorBlockAmount + shieldBlockAmount, s)
+    if 0 >= hp then kill()
   }
 
-  def hit(s: Int, victim: Creature): Unit = {
-    if victim.isBlocking then victim.damage(s - 50) else victim.damage(s)
-    // victim.hp
-  }
+  def hit(s: Int, victim: Creature): Unit = victim.damage(s)
 
-  def block(blockAmount: Int): Unit = {
+  def block(): Unit = {
     isBlocking = true
   }
 
-  def kill(): Unit = isAlive = false
+  def kill(): Unit = {
+    val loot: List[Item] = List(sword, shield, armor).flatten
+    inventory.addItems(loot)
+    isAlive = false
+  }
 
   def heal(): Unit = {
     // if potions > 5 then potions = 5
@@ -79,6 +106,7 @@ case class Player(
     name: String
 ) extends Creature {
 
+  val repr: String = "P"
   override def getNewPos(s: String): Int = s match {
     case "." | "ю" => { pos + 1 }
     case "," | "б" => { pos - 1 }
@@ -95,7 +123,7 @@ case class Player(
 
       case "3" => action = Some(Heal)
 
-      case _ => action = Some(Hit)
+      case _ => action = None
     }
   }
 }

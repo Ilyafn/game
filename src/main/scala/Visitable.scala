@@ -17,4 +17,6 @@ case class Fountain() extends Visitable {
     else potions = 5
     this
   }
+  val repr: String = "F"
+
 }

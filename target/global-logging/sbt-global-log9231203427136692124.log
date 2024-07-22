@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(clean; compile; run, Some(2454a265-4287-4899-967e-54f2d278a13c), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(clean, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: clean[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jul 5, 2024, 7:01:26 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 11 Scala sources to /home/ilya/programming/tasks/class/game/target/scala-3.4.1/classes ...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 4 s, completed Jul 5, 2024, 7:01:30 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 5920 s (01:38:40), completed Jul 5, 2024, 8:40:09 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

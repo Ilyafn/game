@@ -9,7 +9,14 @@ case class World(size: Int = 20) {
       dir match {
         case "exit" | "q"          => scala.util.boundary.break()
         case "." | "," | "б" | "ю" => this.worldMap = player.move(dir, this)
-        case _                     => {}
+        case "i" | "ш"             => player.showInventory()
+        case "w"                   => player.pickUp(Inventory(List(Sword(10))))
+        case "a"                   => player.pickUp(Inventory(List(Apple())))
+        case "e" => {
+          println(String.format("\u001b[%dA", 10))
+          println("\u001b[2K")
+        }
+        case _ => {}
       }
       // print("\u001b[2J")
       print(this)
@@ -20,9 +27,15 @@ case class World(size: Int = 20) {
   }
   var worldMap: Array[Option[Entity]] = Array()
   def optEnemy(): Option[Entity] = {
-    val ran: Int = scala.util.Random.nextInt(5)
-    if ran == 0 then Option(Normal(200))
-    else None
+    val ran: Int = scala.util.Random.nextInt(15)
+    val x = ran match {
+      case 0 => Option(Normal(200))
+      case 1 => Option(Attacker(200))
+      case 2 => Option(Blocker(200))
+      case _ => None
+    }
+    x.map(enemy => enemy.loadout)
+    x
   }
   def populate() = {
     val res = for {
@@ -45,11 +58,8 @@ case class World(size: Int = 20) {
   }
   private def toStringHelper(optP: Option[Entity]): String = {
     optP match {
-
-      case Some(player: Player)     => "P"
-      case Some(enemy: Enemy)       => "X"
-      case Some(fountain: Fountain) => "F"
-      case _                        => "_"
+      case Some(entity) => entity.repr
+      case None         => "_"
     }
   }
   override def toString(): String = {

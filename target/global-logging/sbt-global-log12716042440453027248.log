@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(o, Some(0d51e6e5-be58-40a1-b20f-763be7e80a03), Some(CommandSource(console0)))[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid command: o[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid project ID: o[0m
+[0m[[0m[31merror[0m] [0m[0mExpected ':'[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid key: o[0m
+[0m[[0m[31merror[0m] [0m[0mo[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
