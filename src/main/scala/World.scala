@@ -18,10 +18,9 @@ case class World(size: Int = 20) {
         }
         case _ => {}
       }
-      // print("\u001b[2J")
       print(this)
 
-      worldMap.map(optE => optE.map(_.update()))
+      worldMap.map(optE => optE.map(_.update(turn)))
       turn = turn + 1
     }
   }

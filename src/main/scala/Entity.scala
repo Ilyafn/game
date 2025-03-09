@@ -1,4 +1,4 @@
 trait Entity {
-    def update(): Entity = this
-    val repr:String
+    def update(turn: Int): Entity = this
+    val repr:String = "?"
 }

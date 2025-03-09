@@ -15,24 +15,4 @@ case class Inventory(var items: List[Item] = List()) {
       }
     }
   }
-
-  def show(player: Creature): Unit = {
-    var x = ""
-    while x != "i" do {
-      println(this)
-      x = scala.io.StdIn.readLine
-      val n = x.toIntOption.getOrElse(-100)
-      if n >= 0 && n < items.length then {
-        items(n).showActions()
-
-        val action = scala.io.StdIn.readLine
-
-        if items(n).actions().contains(action) then
-          action match {
-            case "d" => delete(n)
-            case "e" => equip(n, player)
-          }
-      }
-    }
-  }
 }

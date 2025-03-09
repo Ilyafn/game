@@ -1,27 +1,47 @@
+import scala.io.StdIn.readLine
+
 sealed trait Creature extends Entity {
   var hp: Int
+  var mana: Int = 0
   val name: String
   var pos: Int = 0
   var potions: Int = 5
   var isBlocking: Boolean = false
-  var sword: Option[Sword] = None
+  var weapon: Option[Weapon] = None
   var shield: Option[Shield] = None
   var armor: Option[Armor] = None
   val inventory: Inventory = Inventory()
   var xp: Int = 0
   var level: Int = 0
+  val stats: Stats = Stats()
 
   def gainXp(amount: Int): Unit = {
     xp = xp + amount
-    val nextlevelXpThreshold = 10*math.pow(2, level).toInt
-    if xp >= nextlevelXpThreshold then 
+    val nextlevelXpThreshold = 10 * math.pow(2, level).toInt
+    if xp >= nextlevelXpThreshold then {
       level = level + 1
+      println(s"Level up")
+      println(
+        "Повысьте характеристику:" +
+          "1 сила" +
+          "2 ловкость" +
+          "3 интелект"
+      )
+      var a: String = "0"
+      while a != "1" || a != "2" || a != "3" do {
+        var a: String = readLine
+        a match {
+          case "1" => stats.strength + 1
+          case "2" => stats.dexterity + 1
+          case "3" => stats.intelligence + 1
+          case "_" => ()
+        }
+      }
       xp = xp - nextlevelXpThreshold
+    }
   }
 
-  def showInventory(): Unit = {
-    inventory.show(this)
-  }
+  def showInventory(): Unit = ()
 
   def pickUp(loot: Inventory): Unit = {
     inventory.addItems(loot.items)
@@ -44,7 +64,7 @@ sealed trait Creature extends Entity {
     world.worldMap
   }
 
-  def getNewPos(s: String): Int
+  def getNewPos(s: String): Int = pos
 
   var isAlive: Boolean = true
 
@@ -75,13 +95,12 @@ sealed trait Creature extends Entity {
   }
 
   def kill(): Unit = {
-    val loot: List[Item] = List(sword, shield, armor).flatten
+    val loot: List[Item] = List(weapon, shield, armor).flatten
     inventory.addItems(loot)
     isAlive = false
   }
 
   def heal(): Unit = {
-    // if potions > 5 then potions = 5
     val amount: Int = 200
     if potions > 0 then {
       hp = hp + amount
@@ -97,7 +116,6 @@ sealed trait Creature extends Entity {
 }
 trait Enemy extends Creature {
   val name: String = "Enemy"
-  override def getNewPos(s: String): Int = pos
   val queue: List[Action] = List[Action]()
 }
 
@@ -106,7 +124,27 @@ case class Player(
     name: String
 ) extends Creature {
 
-  val repr: String = "P"
+  override def showInventory(): Unit = {
+    var x = ""
+    while x != "i" do {
+      println(inventory)
+      x = scala.io.StdIn.readLine
+      val n = x.toIntOption.getOrElse(-100)
+      if n >= 0 && n < inventory.items.length then {
+        inventory.items(n).showActions()
+
+        val action = scala.io.StdIn.readLine
+
+        if inventory.items(n).actions().contains(action) then
+          action match {
+            case "d" => inventory.delete(n)
+            case "e" => inventory.equip(n, this)
+          }
+      }
+    }
+  }
+
+  override val repr: String = "P"
   override def getNewPos(s: String): Int = s match {
     case "." | "ю" => { pos + 1 }
     case "," | "б" => { pos - 1 }
@@ -126,4 +164,34 @@ case class Player(
       case _ => action = None
     }
   }
+}
+case class NPC(
+    var hp: Int = 999999,
+    name: String
+) extends Creature{
+
+  override def showInventory(): Unit = {
+    var x = ""
+    while x != "i" do {
+      println(inventory)
+      x = scala.io.StdIn.readLine
+      val n = x.toIntOption.getOrElse(-100)
+      if n >= 0 && n < inventory.items.length then {
+        inventory.items(n).showActions()
+
+        val action = scala.io.StdIn.readLine
+
+        if inventory.items(n).actions().contains(action) then
+          action match {
+            case "" => inventory.delete(n)
+          }
+      }
+    }
+  }
+
+
+  override def chooseAction(): Unit = ???
+
+  override val repr: String = ???
+
 }

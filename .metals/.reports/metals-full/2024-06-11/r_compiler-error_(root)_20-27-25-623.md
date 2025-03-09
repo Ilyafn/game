@@ -15,7 +15,7 @@ sealedtrait Equipment {
   var param: Int = 0
 //  effect:
 }
-case class Sword() extends Equipment {
+case class Weapon() extends Equipment {
   wear = true
   param = 100
 }

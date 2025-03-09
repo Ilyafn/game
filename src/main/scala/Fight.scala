@@ -21,7 +21,7 @@ case class Fight(player: Creature, enemy: Creature) {
         enemy.gainXp(player.xp)
         enemy
       }
-      case _ => player
+      case _ => player  
     }
   }
 
@@ -32,9 +32,9 @@ case class Fight(player: Creature, enemy: Creature) {
     player.action match {
       case Some(Hit) =>
         player.hit(
-          player.sword match {
-            case Some(sword) => sword.damage
-            case None        => 10
+          player.weapon match {
+            case Some(weapon) => weapon.calculateDamage(player.stats)
+            case None        => 10*player.stats.strength
           },
           enemy
         )
@@ -49,9 +49,9 @@ case class Fight(player: Creature, enemy: Creature) {
       enemy.action match {
         case Some(Hit) =>
           enemy.hit(
-            enemy.sword match {
-              case Some(sword) => sword.damage
-              case None        => 10
+            enemy.weapon match {
+              case Some(weapon) => weapon.calculateDamage(enemy.stats)
+              case None        => 10*enemy.stats.strength
             },
             player
           )

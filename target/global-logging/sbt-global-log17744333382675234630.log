@@ -1,0 +1,30 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(clean; compile; run, Some(eff8bfdf-8173-4a4b-ac90-dd9316ca1340), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(clean, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: clean[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jul 28, 2024, 7:10:20 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 14 Scala sources to /home/ilya/programming/tasks/class/game/target/scala-3.4.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E040] Syntax Error: /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala:30:16 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m      [33mcase[0m turn [31m0[0m => {restok}[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                '=>' expected, but integer literal found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala:25:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m  [33mvar[0m [36mitems[0m: [35mList[0m[[35mStr[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                  ^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                  Not found: type Str[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /home/ilya/programming/tasks/class/game/src/main/scala/Visitable.scala:31:21 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m      [33mcase[0m _: Int => ()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                     ^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                     Found:    Unit[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                     Required: Entity[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 3 s, completed Jul 28, 2024, 7:10:23 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

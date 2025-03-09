@@ -3,7 +3,7 @@ error id: file://<WORKSPACE>/src/main/scala/Equipment.scala:[13..18) in Input.Vi
   var param: Int = 0
 //  effect:
 }
-case class Sword() extends Equipment {
+case class Weapon() extends Equipment {
   wear = true
   param = 100
 }

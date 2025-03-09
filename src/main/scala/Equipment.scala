@@ -8,15 +8,17 @@ trait Equipment extends Item {
   ): Option[Item]
   override def actions(): List[String] = super.actions() ::: List("e")
 }
-//  effect:
-case class Sword(damage: Int) extends Equipment {
+trait Weapon extends Equipment {
   override def equip(
       player: Creature
   ): Option[Item] = {
-    val swordOpt = player.sword
-    player.sword = Some(this)
-    swordOpt
+    val weaponOpt = player.weapon
+    player.weapon = Some(this)
+    weaponOpt
   }
+  val damage: Int
+
+  def calculateDamage(stats: Stats): Int
 }
 case class Armor(armor: Int) extends Equipment {
   override def equip(
@@ -34,5 +36,21 @@ case class Shield(blockAmount: Int) extends Equipment {
     val shieldOpt = player.shield
     player.shield = Some(this)
     shieldOpt
+  }
+}
+
+case class Sword(val damage: Int) extends Weapon {
+  override def calculateDamage(stats: Stats): Int = {
+    stats.strength * 3 + damage
+  }
+}
+case class Bow(val damage: Int) extends Weapon {
+  override def calculateDamage(stats: Stats): Int = {
+    stats.dexterity * 3 + damage
+  }
+}
+case class Wand(val damage: Int) extends Weapon {
+  override def calculateDamage(stats: Stats): Int = {
+    stats.intelligence * 3 + damage
   }
 }

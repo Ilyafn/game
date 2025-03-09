@@ -10,25 +10,25 @@ case class Normal(var hp: Int) extends VariantEnemy {
       then Some(Hit)
       else Some(Block)
   }
-  val repr: String = "X"
+  override val repr: String = "X"
   override def loadout: Unit = {
     shield = makeShield()
     armor = makeArmor()
-    sword = makeSword()
+    weapon = makeWeapon()
   }
 }
 
 case class Attacker(var hp: Int) extends VariantEnemy {
   override def chooseAction(): Unit = action = Some(Hit)
-  val repr: String = "A"
+  override val repr: String = "A"
   override def loadout: Unit = {
-    sword = makeSword()
+    weapon = makeWeapon()
   }
 }
 
 case class Blocker(var hp: Int) extends VariantEnemy {
   override def chooseAction(): Unit = action = Some(Block)
-  val repr: String = "B"
+  override val repr: String = "B"
   override def loadout: Unit = {
     shield = makeShield()
     armor = makeArmor()

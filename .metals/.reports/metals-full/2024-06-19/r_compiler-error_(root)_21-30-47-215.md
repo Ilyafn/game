@@ -16,7 +16,7 @@ sealhp: Int
   var pos: Int = 0
   var potions: Int = 5
   var is@@Blocking: Boolean = false
-  var sword: Option[Sword]
+  var Weapon: Option[Weapon]
   var shield: Option[Shield]
   var armored trait Creature extends Entity {
   var : Option[Armor]

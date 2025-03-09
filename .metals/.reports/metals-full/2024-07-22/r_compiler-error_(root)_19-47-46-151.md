@@ -18,7 +18,7 @@ sealed trait Creature extends Entity {
   var pos: Int = 0
   var potions: Int = 5
   var isBlocking: Boolean = false
-  var sword: Option[Sword] = None
+  var Weapon: Option[Weapon] = None
   var shield: Option[Shield] = None
   var armor: Option[Armor] = None
   val inventory: Inventory = Inventory()
@@ -86,7 +86,7 @@ sealed trait Creature extends Entity {
   }
 
   def kill(): Unit = {
-    val loot: List[Item] = List(sword, shield, armor).flatten
+    val loot: List[Item] = List(Weapon, shield, armor).flatten
     inventory.addItems(loot)
     isAlive = false
   }
